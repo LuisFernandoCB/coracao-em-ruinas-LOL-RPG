@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coração em Ruínas</title>
     <link rel="shortcut icon" href="images/favicon1.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--CSS de animação JS-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="idsclss.css">
     <link rel="stylesheet" href="unicss.css">
 </head>
 <body>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script> <!--JS de animação JS-->
+
     <header>
         <div>
             <img src="images/labelimg.png" alt="img" width="50px">
@@ -20,7 +27,7 @@
         </div> 
         <nav>
             <ul>
-                <li id="jogs"><span id="gamb">Jogadores <img src="svg/down.svg" alt="down" width="20px"></span>
+                <li><span id="gamb">Jogadores <img src="svg/down.svg" alt="down" width="20px"></span>
                     <ul>
                         <li><a href="html/jogadores/akshan.html">Akshan</a></li>
                         <li><a href="html/jogadores/jinx.html">Jinx</a></li>
@@ -31,15 +38,16 @@
                         <li><a href="html/jogadores/yasuo.html">Yasuo</a></li>
                     </ul>
                 </li>
-                <li id="sobrui">Sobre a Ruína</li>
-                <li id="sobsent">Sobre os Sentinelas</li>
+                <li><a id="sobrui" href="html/sobrearuina.html">Sobre a Ruína</a></li>
+                <li><a id="sobsent" href="html/sobreossentinelas.html">Sobre os Sentinelas</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="firtxt">
-            <h1>A Ruína</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, possimus rem suscipit, eius ratione beatae maxime cupiditate autem voluptate, fugit facere vitae voluptatum quod. Odit reprehenderit non laborum doloribus nisi?</p>
+        <section id="firtxt" data-aos="fade-up" data-aos-duration="1500">
+            <h1>O Rei Destruído</h1>
+            <p>Poucos sabem do reino do leste, para além dos mares, cujo nome foi esquecido entre as ruínas de suas terras. Menos ainda sabem de seu jovem e tolo regente, que foi condenado à destruição por seu coração apaixonado. O nome dessa grande ameaça era, e ainda é, Viego.
+            </p>
         </section>
     </main>
     <footer>

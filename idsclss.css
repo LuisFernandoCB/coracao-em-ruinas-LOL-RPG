@@ -1,5 +1,5 @@
 #firtxt {
-    width: 500px;
+    width: 700px;
     padding: 20px;
     margin: 30px auto;
 
@@ -7,6 +7,10 @@
     flex-direction: column;
     gap: 10px;
 
-    text-align: justify;
+    text-align: center;
     text-indent: 20px;
+}
+
+#firtxt p {
+    font-family: "Cinzel";
 }
