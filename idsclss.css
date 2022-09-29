@@ -1,0 +1,12 @@
+#firtxt {
+    width: 500px;
+    padding: 20px;
+    margin: 30px auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    text-align: justify;
+    text-indent: 20px;
+}

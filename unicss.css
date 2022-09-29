@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
 * {
     padding: 0;
@@ -7,6 +8,7 @@
     list-style: none;
     text-decoration: none;
     font-family: "Reem Kufi Fun";
+    color: white;
 }
 
 
@@ -19,6 +21,13 @@
 
 #jogs {
     color: #ddb412;
+}
+
+#gamb {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
 }
 
 #sobsent {
@@ -62,30 +71,25 @@ nav a:hover {
     color: #095fff;
 }
 
-nav a {
-    border-radius: 20px 0px;
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: var(--fontA);
-    padding: 7px;
-}
-
 nav ul li {
-    display: inline;
     position: relative;
-    transition: 1s;
+    transition: 0.9s;
     cursor: pointer;
+    padding: 8px;
 }
 
 nav ul li:hover {
     border-radius: 20px 0px;
     box-shadow: 4px 4px 15px 1px rgba(0, 0, 0, 0.411);
-    padding: 7px;
+    padding: 12px;
+}
+
+nav ul li ul li:hover {
+    padding: 10px;
 }
 
 nav ul li ul{
-    transition: 2s;
+    margin: 8px auto auto -6px;
     background-image: linear-gradient(to bottom, #ecc543, #02A8B1);
     border: 1px solid #f8c600;
 }
@@ -97,7 +101,6 @@ nav ul li a{
 nav ul ul{
     display: none;
     box-shadow: 4px 4px 15px 1px rgba(0, 0, 0, 0.411);
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
     position: absolute;
     padding: 10px;
     border-radius: 0px 20px;
@@ -115,6 +118,6 @@ nav ul li:hover ul{
     
 }
 
-navu ul li a{
+nav ul li a{
     display: block;
 }
