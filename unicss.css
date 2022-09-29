@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+    text-decoration: none;
+    font-family: "Reem Kufi Fun";
+}
+
+
+:root {
+    --color: #02A8B1;
+    --color: #0C333E;
+    --color: #ddb412;
+    --color: #dbc16a;
+}
+
+#jogs {
+    color: #ddb412;
+}
+
+#sobsent {
+    color: #dbc16a;
+}
+
+#sobrui {
+    color: #00cfb4;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header div p {
+    color: white;
+    font-size: 19px;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a:hover {
+    transition: 0.5s;
+    color: #095fff;
+}
+
+nav a {
+    border-radius: 20px 0px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: var(--fontA);
+    padding: 7px;
+}
+
+nav ul li {
+    display: inline;
+    position: relative;
+    transition: 1s;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    border-radius: 20px 0px;
+    box-shadow: 4px 4px 15px 1px rgba(0, 0, 0, 0.411);
+    padding: 7px;
+}
+
+nav ul li ul{
+    transition: 2s;
+    background-image: linear-gradient(to bottom, #ecc543, #02A8B1);
+    border: 1px solid #f8c600;
+}
+
+nav ul li a{
+    display: inline-block;
+}
+
+nav ul ul{
+    display: none;
+    box-shadow: 4px 4px 15px 1px rgba(0, 0, 0, 0.411);
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    position: absolute;
+    padding: 10px;
+    border-radius: 0px 20px;
+    z-index: 17;
+}
+
+nav ul ul li a{
+    border-radius: 0px 20px;
+    justify-content: center;
+    
+}
+
+nav ul li:hover ul{
+    display: block;
+    
+}
+
+navu ul li a{
+    display: block;
+}
