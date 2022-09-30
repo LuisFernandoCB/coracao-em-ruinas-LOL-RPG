@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body {
+    background-color: #E9DBB5;
+}
+
+header {
+    background-color: #5f001d;
+} 
+
+#pres h1{
+    text-align: center;
+    font-size: 35px;
+    font-family: "Cinzel";
+    color: #daab12;
+}
+
+#pres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    padding: 20px;
+} 
+
+#atri {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#atri div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}

@@ -19,20 +19,22 @@
     --color: #dbc16a;
 }
 
+#ini a {
+    color: #00ece1;
+}
+
+#ini:hover {
+    border: 1px solid #00ece1;
+    background-color: #009985;
+    box-shadow: 4px 4px 20px 1px rgb(0 158 105);
+}
+
 #gamb {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 5px;
     color: #ddb412;
-}
-
-#sobsent {
-    color: #dbc16a;
-}
-
-#sobrui {
-    color: #00cfb4;
 }
 
 header {
@@ -65,9 +67,9 @@ nav ul {
 
 nav ul li {
     position: relative;
-    transition: 0.9s;
+    transition: 0.6s;
     cursor: pointer;
-    padding: 8px;
+    padding: 6px;
     text-align: center;
 }
 
@@ -120,3 +122,28 @@ nav ul li:hover ul{
 nav ul li a{
     display: block;
 }
+
+#sobsent a{
+    color: #dbc16a;
+}
+
+#sobsent:hover {
+    box-shadow: 4px 4px 20px 1px rgb(158, 134, 0);
+    background-color: #a57e00;
+}
+
+#sobrui a{
+    color: #00cfb4;
+}
+
+#sobrui:hover {
+    border: 1px solid #00ece1;
+    background-color: #009985;
+    box-shadow: 4px 4px 20px 1px rgb(0 158 105);
+}
+
+#jgs:hover {
+    box-shadow: 4px 4px 20px 1px rgb(158, 134, 0);
+    background-color: #a57e00;
+}
+
