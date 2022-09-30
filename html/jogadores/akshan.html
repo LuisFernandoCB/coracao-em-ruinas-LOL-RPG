@@ -12,6 +12,46 @@
 </head>
 <body>
 
+    <script>
+        var forcP = document.getElementById("for");
+        var desP = document.getElementById("des");
+        var conP = document.getElementById("con");
+        var intP = document.getElementById("int");
+        var sabP = document.getElementById("sab");
+        var carP = document.getElementById("car");
+
+        var forcMP = document.getElementById("forM");
+        var desMP = document.getElementById("desM");
+        var conMP = document.getElementById("conM");
+        var intMP = document.getElementById("intM");
+        var sabMP = document.getElementById("sabM");
+        var carMP = document.getElementById("carM");
+
+        var forc = 14;
+        var des = 24;
+        var con = 18;
+        var int = 12;
+        var sab = 12;
+        var car = 16;
+
+        var forM = (forc - 10) / 2;
+        var desM = (des - 10) / 2;
+        var conM = (con - 10) / 2;
+        var intM = (int - 10) / 2;
+        var sabM = (sab - 10) / 2;
+        var carM = (car - 10) / 2;
+
+        forcP.innerHTML = forc
+        desP
+        conP = innerHTML() 
+        intP = innerHTML() 
+        sabP = innerHTML() 
+        carP = innerHTML() 
+
+        console.log(des)
+        console.log(desM)
+
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
@@ -48,22 +88,22 @@
         </section>
         <section id="atri">
             <div>
-                <img src="../../svg/for.svg" alt="" width="30px">
+                <img src="../../svg/for.svg" alt="" width="30px"> : <p id="for">a</p> | <p id="forM"></p>
             </div>
             <div>
-                <img src="../../svg/des.svg" alt="" width="30px">
+                <img src="../../svg/des.svg" alt="" width="30px"> : <p id="des"></p> | <p id="desM"></p>
             </div>
             <div>
-                <img src="../../svg/con.svg" alt="" width="30px">
+                <img src="../../svg/con.svg" alt="" width="30px"> : <p id="con"></p> | <p id="conM"></p>
             </div>
             <div>
-                <img src="../../svg/int.svg" alt="" width="30px">
+                <img src="../../svg/int.svg" alt="" width="30px"> : <p id="int"></p> | <p id="intM"></p>
             </div>
             <div>
-                <img src="../../svg/sab.svg" alt="" width="30px">
+                <img src="../../svg/sab.svg" alt="" width="30px"> : <p id="sab"></p> | <p id="sabM"></p>
             </div>
             <div>
-                <img src="../../svg/car.svg" alt="" width="30px">
+                <img src="../../svg/car.svg" alt="" width="30px"> : <p id="car"></p> | <p id="carM"></p>
             </div>
         </section>
     </main>
