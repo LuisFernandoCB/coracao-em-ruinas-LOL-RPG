@@ -1,1 +1,2 @@
 poder baixar o arquivo png
+atiradores: quantidades de ataque por AÇÃO = desM

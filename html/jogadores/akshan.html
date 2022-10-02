@@ -7,51 +7,12 @@
     <title>Coração em Ruínas</title>
     <link rel="shortcut icon" href="../../images/favicon1.ico" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--CSS de animação JS-->
-    <link rel="stylesheet" href="../../unicss.css">
-    <link rel="stylesheet" href="../../jogs.css">
+    <link rel="stylesheet" href="../../css/unicss.css">
+    <link rel="stylesheet" href="../../css/jogs.css">
 </head>
 <body>
 
-    <script>
-        var forcP = document.getElementById("for");
-        var desP = document.getElementById("des");
-        var conP = document.getElementById("con");
-        var intP = document.getElementById("int");
-        var sabP = document.getElementById("sab");
-        var carP = document.getElementById("car");
-
-        var forcMP = document.getElementById("forM");
-        var desMP = document.getElementById("desM");
-        var conMP = document.getElementById("conM");
-        var intMP = document.getElementById("intM");
-        var sabMP = document.getElementById("sabM");
-        var carMP = document.getElementById("carM");
-
-        var forc = 14;
-        var des = 24;
-        var con = 18;
-        var int = 12;
-        var sab = 12;
-        var car = 16;
-
-        var forM = (forc - 10) / 2;
-        var desM = (des - 10) / 2;
-        var conM = (con - 10) / 2;
-        var intM = (int - 10) / 2;
-        var sabM = (sab - 10) / 2;
-        var carM = (car - 10) / 2;
-
-        forcP.innerHTML = forc
-        desP
-        conP = innerHTML() 
-        intP = innerHTML() 
-        sabP = innerHTML() 
-        carP = innerHTML() 
-
-        console.log(des)
-        console.log(desM)
-
-    </script>
+    <script src="script.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
@@ -84,26 +45,26 @@
     <main>
         <section id="pres" data-aos="fade-up" data-aos-duration="1500">
             <h1>Akshan - O Sentinela Rebelde</h1>
-            <img src="../../images/emoaks.png" alt="akshan" width="180px">
+            <img src="../../images/akshan/emoaks.png" alt="akshan" width="180px">
         </section>
         <section id="atri">
             <div>
-                <img src="../../svg/for.svg" alt="" width="30px"> : <p id="for">a</p> | <p id="forM"></p>
+                <img src="../../svg/for.svg" alt="for" width="30px">Força: <p id="for">14</p> | <p id="forM"></p>
             </div>
             <div>
-                <img src="../../svg/des.svg" alt="" width="30px"> : <p id="des"></p> | <p id="desM"></p>
+                <img src="../../svg/des.svg" alt="des" width="30px">Destreza: <p id="des">24</p> | <p id="desM"></p>
             </div>
             <div>
-                <img src="../../svg/con.svg" alt="" width="30px"> : <p id="con"></p> | <p id="conM"></p>
+                <img src="../../svg/con.svg" alt="con" width="30px">Constituição: <p id="con">18</p> | <p id="conM"></p>
             </div>
             <div>
-                <img src="../../svg/int.svg" alt="" width="30px"> : <p id="int"></p> | <p id="intM"></p>
+                <img src="../../svg/int.svg" alt="int" width="30px">Inteligência: <p id="int">12</p> | <p id="intM"></p>
             </div>
             <div>
-                <img src="../../svg/sab.svg" alt="" width="30px"> : <p id="sab"></p> | <p id="sabM"></p>
+                <img src="../../svg/sab.svg" alt="sab" width="30px">Sabedoria: <p id="sab">12</p> | <p id="sabM"></p>
             </div>
             <div>
-                <img src="../../svg/car.svg" alt="" width="30px"> : <p id="car"></p> | <p id="carM"></p>
+                <img src="../../svg/car.svg" alt="car" width="30px">Carisma: <p id="car">16</p> | <p id="carM"></p>
             </div>
         </section>
     </main>
