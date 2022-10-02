@@ -1,0 +1,25 @@
+body {
+    background-color: #E9DBB5;
+}
+
+header {
+    background-color: #5f001d;
+} 
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(190, 190, 190);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #dbc16a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ddb412;
+}

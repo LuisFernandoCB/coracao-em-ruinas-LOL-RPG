@@ -16,6 +16,16 @@ var intMP = document.getElementById("intM");
 var sabMP = document.getElementById("sabM");
 var carMP = document.getElementById("carM");
 
+// Pegando tags p referentes aos modificadores para somar
+
+var mforc = document.getElementById("mfor");
+var mdes = document.getElementById("mdes");
+var mcon = document.getElementById("mcon");
+var mint = document.getElementById("mint");
+var msab = document.getElementById("msab");
+var mcar = document.getElementById("mcar");
+
+
 // Fazendo calculo do modificador
 
 var forcM = ((forcP - 10) / 2) / 2;
@@ -43,3 +53,20 @@ conMP.innerHTML = (conM >= 0 ? "<span style='color: green;'>+" : "<span style='c
 intMP.innerHTML = (intM >= 0 ? "<span style='color: green;'>+" : "<span style='color: red;'>") + intM + "</span>"
 sabMP.innerHTML = (sabM >= 0 ? "<span style='color: green;'>+" : "<span style='color: red;'>") + sabM + "</span>"
 carMP.innerHTML = (conM >= 0 ? "<span style='color: green;'>+" : "<span style='color: red;'>") + carM + "</span>"
+
+// Exibindo valores formatados com base nos dados para somar
+
+mforc.innerHTML = (forcM >= 0 ? "<span style='color: green;'>+" : "<span style='color: red;'>") + forcM + " de força</span>"
+
+mdes.innerHTML = (desM >= 0 ? "<span style='color: green;'>+" : "<span style='color: red;'>") + desM + " de destreza</span>"
+mdes2.innerHTML = (desM >= 0 ? "<span style='color: green;'>+" : "<span style='color: red;'>") + desM + " de destreza</span>"
+mdes3.innerHTML = (desM >= 0 ? "<span style='color: green;'>+" : "<span style='color: red;'>") + desM + " de destreza</span>"
+mdes4.innerHTML = (desM >= 0 ? "<span style='color: green;'>+" : "<span style='color: red;'>") + desM + " de destreza</span>"
+
+mcon.innerHTML = (conM >= 0 ? "<span style='color: green;'>+" : "<span style='color: red;'>") + conM + " de </span>"
+
+mint.innerHTML = (intM >= 0 ? "<span style='color: green;'>+" : "<span style='color: red;'>") + intM + "</span>"
+
+msab.innerHTML = (sabM >= 0 ? "<span style='color: green;'>+" : "<span style='color: red;'>") + sabM + "</span>"
+
+mcar.innerHTML = (conM >= 0 ? "<span style='color: green;'>+" : "<span style='color: red;'>") + carM + "</span>"

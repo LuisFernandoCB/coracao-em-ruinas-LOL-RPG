@@ -9,6 +9,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--CSS de animação JS-->
     <link rel="stylesheet" href="../../css/unicss.css">
     <link rel="stylesheet" href="../../css/jogs.css">
+    <link rel="stylesheet" href="../../css/sent.css">
 </head>
 <body>
 
@@ -47,29 +48,66 @@
             <h1>Akshan - O Sentinela Rebelde</h1>
             <img src="../../images/akshan/emoaks.png" alt="akshan" width="180px">
         </section>
-        <section id="atri">
-            <div>
-                <img src="../../svg/for.svg" alt="for" width="30px">Força: <p id="for">14</p> | <p id="forM"></p>
-            </div>
-            <div>
-                <img src="../../svg/des.svg" alt="des" width="30px">Destreza: <p id="des">24</p> | <p id="desM"></p>
-            </div>
-            <div>
-                <img src="../../svg/con.svg" alt="con" width="30px">Constituição: <p id="con">18</p> | <p id="conM"></p>
-            </div>
-            <div>
-                <img src="../../svg/int.svg" alt="int" width="30px">Inteligência: <p id="int">12</p> | <p id="intM"></p>
-            </div>
-            <div>
-                <img src="../../svg/sab.svg" alt="sab" width="30px">Sabedoria: <p id="sab">12</p> | <p id="sabM"></p>
-            </div>
-            <div>
-                <img src="../../svg/car.svg" alt="car" width="30px">Carisma: <p id="car">16</p> | <p id="carM"></p>
-            </div>
-        </section>
+        <div id="info">
+            <section id="atri" data-aos="fade-up" data-aos-duration="1500">
+                <div>
+                    <img src="../../svg/for.svg" alt="for" width="30px">Força: <p id="for">14</p> <span>|</span> <p id="forM"></p>
+                </div>
+                <div>
+                    <img src="../../svg/des.svg" alt="des" width="30px">Destreza: <p id="des">24</p> <span>|</span> <p id="desM"></p>
+                </div>
+                <div>
+                    <img src="../../svg/con.svg" alt="con" width="30px">Constituição: <p id="con">18</p> <span>|</span> <p id="conM"></p>
+                </div>
+                <div>
+                    <img src="../../svg/int.svg" alt="int" width="30px">Inteligência: <p id="int">12</p> <span>|</span> <p id="intM"></p>
+                </div>
+                <div>
+                    <img src="../../svg/sab.svg" alt="sab" width="30px">Sabedoria: <p id="sab">12</p> <span>|</span> <p id="sabM"></p>
+                </div>
+                <div>
+                    <img src="../../svg/car.svg" alt="car" width="30px">Carisma: <p id="car">16</p> <span>|</span> <p id="carM"></p>
+                </div>
+            </section>
+            <section id="habilidades">
+                <div>
+                    <div class="tithab"><img src="../../images/akshan/P.png" alt="P"><span>Passiva</span></div> <div class="infohab">
+                        <br> <span class="border">
+                            Sempre ao usar ataques básicos, Akshan estoura uma marca em um alvo causando dano adicional de <span class="aplicAtrib">1d6 de dano <span id="mdes"></span>.</span>
+                    </div>
+                    </span>
+                </div>
+                <div>
+                    <div class="tithab"><img src="../../images/akshan/Q.png" alt="Q"><span>Boomerang</span></div> <div class="infohab">
+                        <br> <span class="border">Akshan lança seu boomerang em linha reta causando <span class="aplicAtrib">1d8 + 1d4 de dano <span id="mdes2"></span>.</span></span>
+                                        </div>
+                    </div>
+                <div>
+                    <div class="tithab"><img src="../../images/akshan/W.png" alt="W"><span>A Capa</span></div> <div class="infohab">
+                        <br><span class="border">
+                            Akshan pode se esconder de inimigos através de sua capa.
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <div class="tithab"><img src="../../images/akshan/E.png" alt="E"> <span>Gancho</span></div> <div class="infohab">
+                        <br> <span class="border">Akshan dispara seu gancho podendo se deslocar e disparar ao mesmo tempo e seu disparo causa <span class="aplicAtrib">1d8 de dano <span id="mdes3"></span>.</span></span></div>
+                    </div>
+                <div>
+                    <div class="tithab"><img src="../../images/akshan/R.png" alt="R"> <span>Penitência</span></div> <div class="infohab">
+                        <br><span class="border">Akshan começa a canalizar com sua Penitência 6 disparos causando <span class="aplicAtrib">1d8 de dano em cada disparo <span id="mdes4"></span>.</span></span>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
 
     </footer>
+    <span id="mint" style="display: none"></span>
+    <span id="mfor" style="display: none"></span>
+    <span id="msab" style="display: none"></span>
+    <span id="mcar" style="display: none"></span>
+    <span id="mcon" style="display: none"></span>
 </body>
 </html>

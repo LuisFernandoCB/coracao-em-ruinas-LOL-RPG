@@ -11,12 +11,12 @@
     color: white;
 }
 
-
 :root {
     --color: #02A8B1;
     --color: #0C333E;
     --color: #ddb412;
     --color: #dbc16a;
+    --color: #5f001d;
 }
 
 #ini a {
@@ -43,6 +43,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    height: 50px;
 }
 
 header div p {

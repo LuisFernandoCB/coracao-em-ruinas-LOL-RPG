@@ -1,18 +1,28 @@
 @charset "UTF-8";
 
-body {
-    background-color: #E9DBB5;
+.aplicAtrib {
+    color: #00ddd2;
+    text-shadow: 1px 1px 1px transparent;
 }
 
-header {
-    background-color: #5f001d;
-} 
+.infohab {
+    width: 100%;
+}
+
+.tithab {
+    min-width: 190px;
+}
+
+.tithab span{
+    margin: auto;
+}
 
 #pres h1{
     text-align: center;
     font-size: 35px;
     font-family: "Cinzel";
     color: #daab12;
+    text-shadow: 0px 0px 10px rgba(255, 136, 0, 0.23);
 }
 
 #pres {
@@ -22,7 +32,12 @@ header {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     padding: 20px;
+    margin: auto;
 } 
 
 #atri {
@@ -31,10 +46,51 @@ main {
     align-items: flex-start;
 }
 
+#atri span {
+    color: #daab12;
+}
+
 #atri div{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
+    
+}
+
+#habilidades div img {
+    width: 50px;
+    border-radius: 10px;
+}
+
+#habilidades {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+
+}
+
+#habilidades div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.border {
+    font-size: 17px;
+    border-left: 2px solid #5f001d;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
     font-size: 25px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
 }
