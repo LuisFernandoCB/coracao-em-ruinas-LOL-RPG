@@ -56,6 +56,8 @@ carMP.innerHTML = (conM >= 0 ? "<span style='color: green;'>+" : "<span style='c
 
 // Exibindo valores formatados com base nos dados para somar
 
+var m = -1
+
 mforc.innerHTML = (forcM >= 0 ? "<span style='color: green;'>+" : "<span style='color: red;'>") + forcM + " de força</span>"
 
 mdes.innerHTML = (desM >= 0 ? "<span style='color: green;'>+" : "<span style='color: red;'>") + desM + " de destreza</span>"
@@ -65,8 +67,47 @@ mdes4.innerHTML = (desM >= 0 ? "<span style='color: green;'>+" : "<span style='c
 
 mcon.innerHTML = (conM >= 0 ? "<span style='color: green;'>+" : "<span style='color: red;'>") + conM + " de </span>"
 
-mint.innerHTML = (intM >= 0 ? "<span style='color: green;'>+" : "<span style='color: red;'>") + intM + "</span>"
+mint.innerHTML = (intM >= 0 ? "<span style='color: #ffa600;'>-" : "<span style='color: red;'>+") + intM*m + " de inteligência</span>"
+
 
 msab.innerHTML = (sabM >= 0 ? "<span style='color: green;'>+" : "<span style='color: red;'>") + sabM + "</span>"
 
 mcar.innerHTML = (conM >= 0 ? "<span style='color: green;'>+" : "<span style='color: red;'>") + carM + "</span>"
+
+function getIp(callback)
+{
+    function response(s)
+    {
+        callback(window.userip);
+
+        s.onload = s.onerror = null;
+        document.body.removeChild(s);
+    }
+
+    function trigger()
+    {
+        window.userip = false;
+
+        var s = document.createElement("script");
+        s.async = true;
+        s.onload = function() {
+            response(s);
+        };
+        s.onerror = function() {
+            response(s);
+        };
+
+        s.src = "https://l2.io/ip.js?var=userip";
+        document.body.appendChild(s);
+    }
+
+    if (/^(interactive|complete)$/i.test(document.readyState)) {
+        trigger();
+    } else {
+        document.addEventListener('DOMContentLoaded', trigger);
+    }
+}
+
+getIp(function (ip) {
+    console.log(ip);
+});

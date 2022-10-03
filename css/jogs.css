@@ -86,11 +86,22 @@ main {
     padding: 5px;
 }
 
+.cd {
+    color: #5f001d;
+}
+
 #info {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 30px;
     font-size: 25px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
+}
+
+#outrasinfo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
 }
