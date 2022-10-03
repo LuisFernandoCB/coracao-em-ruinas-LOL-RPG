@@ -3,3 +3,7 @@ atiradores: quantidades de ataque por AÇÃO = desM
 
 vayne: a passiva do W some caso não consiga estourar no turno 
 akshan: 1 ataque basico equivale a 3, mas o dado de dano é o mesmo de um ataque basico e soma a passiva, ou seja, a cada ataque basico eu sempre vou estourar a passiva
+
+copiar a ficha, nivel e tal
+
+pagina runeterra
